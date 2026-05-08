@@ -1,0 +1,136 @@
+.charis-sil-bold {
+  font-family: "Charis SIL", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+body{
+    background-color: #EDE7DE;
+    margin: 0;
+}
+
+nav{
+    background-color: rgba(247, 243, 243, 0.5);
+    display: flex;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    height: 90px;
+    margin: 10px 10px;
+    border-radius: 50px;
+
+}
+
+ul{
+    padding-left: 0%;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+
+}
+li{
+    list-style: none;
+    display: flex;
+    font-family: "Charis SIL";
+    
+}
+
+a{
+    color: blueviolet;
+    text-decoration: none;
+}
+
+#name{
+    font-family: "Charis SIL";
+    color: red;
+    display: flex;
+    font-size: 30px;
+}
+
+#AboutMe{
+    font-family: "Charis SIL";
+}
+
+#profile{
+    height: 225px;
+    width: 233px;
+    border-radius: 10px;
+    margin: 30px 30px;
+}
+
+#AboutMe-Experience{
+    margin: 15px 15px;
+}
+
+
+#Home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li:hover{
+    margin: 5px;
+    border-radius: 50px;
+    outline: 3px dashed red;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: "Charis SIL";
+}
+
+h3{
+    font-family: "Charis SIL";
+    color: #025A4E;
+    margin: 15px 15px;
+    
+}
+
+@media screen and (max-width: 680px) {
+ul {
+width: 90%;
+}
+#profile{
+    border-radius: 100px;
+    display: flex;
+    justify-self: center;
+}
+h3{
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+}
+#AboutMe-Experience{
+    display: flex;
+    text-align: center;
+    margin: 15px 15px;
+}
+}
+
+/* Apartado Skills, h1 y h3 usados */
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-family: "Charis SIL";
+}
+
+#Skills-Text{
+    margin: 15px 15px;
+    font-family: "Charis SIL";
+}
+
+#Skills-Imgs{
+    display: flex;
+    justify-content: space-around;
+}
+@media screen and (max-width: 680px){
+
+
+}
