@@ -20,13 +20,12 @@ nav{
     height: 90px;
     margin: 10px 10px;
     border-radius: 50px;
-
 }
 
 ul{
     padding-left: 0%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 90%;
 
 }
@@ -51,17 +50,23 @@ a{
 
 #AboutMe{
     font-family: "Charis SIL";
+    display: flex;
 }
+
+
 
 #profile{
     height: 225px;
     width: 233px;
     border-radius: 10px;
     margin: 30px 30px;
+    text-align: left;
 }
 
 #AboutMe-Experience{
+    display: flex;
     margin: 15px 15px;
+    text-align: justify;
 }
 
 
@@ -69,6 +74,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 25px;
 }
 
 li:hover{
@@ -81,6 +87,10 @@ h1{
     display: flex;
     justify-content: center;
     font-family: "Charis SIL";
+    border-radius: 5px;
+    margin: auto 250px;
+    background-color: rgb(247, 243, 243);
+    outline: 5px solid rgb(225, 225, 225);
 }
 
 h3{
@@ -93,6 +103,13 @@ h3{
 @media screen and (max-width: 680px) {
 ul {
 width: 90%;
+}
+h1{
+    margin: auto 90px;
+}
+#Home{
+    font-size: 22px;
+    font-weight: 500;
 }
 #profile{
     border-radius: 100px;
@@ -109,6 +126,9 @@ h3{
     display: flex;
     text-align: center;
     margin: 15px 15px;
+}
+#AboutMe{
+    display: block;
 }
 }
 
@@ -130,9 +150,25 @@ h2{
     display: flex;
     justify-content: space-around;
     margin: 10px;
+    
+}
+
+#Skills-Imgs img{
+    height: 120px;
 }
 @media screen and (max-width: 680px){
+#Skills-Imgs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10px;
+    
+}
 
+#Skills-Imgs img{
+    display: flex;
+    height: 120px;
+    margin: auto;
+}
 
 }
 
@@ -168,3 +204,21 @@ font-size: 34px;
     
 }
 }
+
+/* ___Apartado Contacto y footer___ */
+
+footer{
+    background-color: rgb(247, 243, 243);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+    border-radius: 50px;
+}
+
+footer img{
+    height: 120px;
+}
+/* Proxima clase: 
+Hacer que el menu superior (Home, About, Skills...) pase al lado derecho de la pantalla, excepto en movil*/
