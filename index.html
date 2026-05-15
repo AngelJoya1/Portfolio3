@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:wght@700&display=swap" rel="stylesheet">
 <body>
-    <nav>
-        <ul>
+    <nav class="menu" id="menu">
+        <ul class="selection" id="selection">
             <li>
                 <a href="Home" >Home</a>
             </li>
@@ -27,6 +27,22 @@
             </li>
         </ul>
     </nav>
+
+        <script>
+            window.addEventListener("scroll", function() {
+                let menu = document.getElementById("menu");
+                let selection = document.getElementById("selection");
+            
+                if(window.scrollY > 90){
+                    menu.classList.add("side");
+                    selection.classList.add("side")
+                } else {
+                    menu.classList.remove("side");
+                    selection.classList.remove("side");
+                }
+            });
+        </script>
+
     <section id="Home">
         <p>Hello, my name is</p>
         <div id="name">Angel</div>
